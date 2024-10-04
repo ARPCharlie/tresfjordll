@@ -59,4 +59,65 @@
         </div>
       </div>
     </div>
+    <div class="bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:text-center">
+        <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Hva vi leverer</p>
+        <p class="mt-6 text-xl leading-8 text-gray-700">Her er en oversikt over hvilke tjenester vi leverer.</p>
+      </div>
+      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+          <div v-for="feature in features" :key="feature.name" class="relative pl-20">
+            <dt class="font-semibold leading-7 text-gray-900 text-xl md:text-2xl">
+              <div class="absolute left-0 top-0 flex h-16 w-16 items-center justify-center rounded-lg bg-black">
+                <component :is="feature.icon" class="h-6 w-6 text-white" aria-hidden="true" />
+              </div>
+              {{ feature.name }}
+            </dt>
+            <dd class="mt-2 text-base md:text-xl leading-7 text-gray-600">{{ feature.description }}</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
 </template>
+
+<script setup>
+import { ref } from 'vue'
+import { Dialog, DialogPanel } from '@headlessui/vue'
+import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
+import { SpeakerWaveIcon, LightBulbIcon, VideoCameraIcon, MusicalNoteIcon } from '@heroicons/vue/24/outline'
+
+const mobileMenuOpen = ref(false)
+
+const navigation = [
+  { name: 'Hjem', href: '#' },
+  { name: 'Tjenester', href: '#services' },
+  { name: 'Info', href: '#info' },
+  { name: 'Crew', href: '#crew' },
+  { name: 'Kontakt', href: '#contact' },
+]
+
+const features = [
+    {
+        name: 'Lyd',
+        description: 'Lyd utstyr til høy kvalitet.',
+        icon: SpeakerWaveIcon,
+    },
+    {
+        name: 'Lys',
+        description: 'Profesjonelle fiksturer og lys miksing.',
+        icon: LightBulbIcon,
+    },
+    {
+        name: 'AV',
+        description: 'Filming, streaming og display.',
+        icon: VideoCameraIcon,
+    },
+    {
+        name: 'Scene',
+        description: 'Scene utstyr til alle typer arrangementer.',
+        icon: MusicalNoteIcon,
+    }
+]
+</script>
