@@ -229,6 +229,18 @@
         >
           Learn More
         </a>
+  <div class="bg-white py-16 sm:py-24 lg:py-32">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-8 sm:mb-12">Crewet</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 bg-black text-black p-4 sm:p-6 py-16 sm:py-24">
+        <div v-for="member in crewMembers" :key="member.id" class="flex flex-col items-center mx-auto bg-white py-4 sm:py-6 rounded-md w-full sm:w-80 lg:w-96">
+          <img :src="member.image" :alt="member.name" class="w-32 h-32 sm:w-40 sm:h-40 object-fit rounded-full mb-4">
+          <h3 class="text-xl sm:text-2xl font-semibold mb-2">{{ member.name }}</h3>
+          <p class="text-gray-800 text-base sm:text-lg">{{ member.job }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
       </div>
     </div>
     '
