@@ -241,6 +241,16 @@
       </div>
     </div>
   </div>
+  <div class="bg-white py-16 sm:py-24 lg:py-32">
+    <div class="container w-full sm:w-3/4 md:w-1/2 lg:w-1/3 mx-auto px-4 sm:px-6">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-8 sm:mb-12">Kontakt oss</h2>
+      <div class="gap-6 sm:gap-8 p-4 sm:p-6 py-16 sm:py-24 bg-black flex justify-center">
+        <div class="flex flex-col items-center bg-white p-4 sm:p-6 rounded-md w-full sm:w-96">
+          <img src="https://via.placeholder.com/150" alt="Kontakt person" class="w-32 h-32 sm:w-40 sm:h-40 object-fit rounded-full mb-4">
+          <h3 class="text-xl sm:text-2xl font-semibold mb-2">Øyvind Rypdal</h3>
+          <p class="text-base sm:text-lg">Telefon: 95250532</p>
+          <p class="text-base sm:text-lg">E-post: oyvind.rypdal@hotmail.com</p>
+        </div>
       </div>
     </div>
     '
