@@ -193,6 +193,46 @@
       </div>
     </div>
   </div>
+  <div class="bg-white py-24 sm:py-32">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
+          Informasjon
+        </h2>
+      </div>
+      <div class="mt-10">
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div class="bg-gray-50 rounded-lg p-6 shadow-md">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Plassering</h3>
+            <p class="text-gray-600">
+              Noe om hvor vi har lager og hvor vi lever til kanskje???
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-6 shadow-md">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Noe</h3>
+            <p class="text-gray-600">
+              Du fer virkelig finne på nokko sprell her altså, øyvind.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-6 shadow-md">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Noe annet</h3>
+            <p class="text-gray-600">
+              Åsså kanskje nokko lite her, om d e aktuelt?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 text-center">
+        <a
+          href="#"
+          class="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300"
+        >
+          Learn More
+        </a>
+      </div>
+    </div>
+    '
+  </div>
 </template>
 
 <script setup>
