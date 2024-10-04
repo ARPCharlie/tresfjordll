@@ -300,4 +300,43 @@ const features = [
     icon: MusicalNoteIcon,
   },
 ];
+
+const crewMembers = [
+  {
+    id: 1,
+    name: "Øyvind",
+    job: "Big boss",
+    image: "https://picsum.photos/200/300"
+  },
+  {
+    id: 2,
+    name: "Kristoffer",
+    job: "Lika å klage",
+    image: "https://picsum.photos/200/300"
+  },
+  {
+    id: 3,
+    name: "Remi",
+    job: "Trøtt til tides",
+    image: "https://picsum.photos/200/300"
+  },
+  {
+    id: 4,
+    name: "Martinus",
+    job: "Spiss kompetent i inkompetanse",
+    image: "https://picsum.photos/200/300"
+  },
+  {
+    id: 5,
+    name: "E d fleir?",
+    job: "Production Manager",
+    image: "https://picsum.photos/200/300"
+  },
+  {
+    id: 6,
+    name: "Muligens...",
+    job: "Event Coordinator",
+    image: "https://picsum.photos/200/300"
+  }
+];
 </script>
