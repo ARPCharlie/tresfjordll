@@ -2,12 +2,12 @@
   <div class="bg-white">
     <header class="absolute inset-x-0 top-0 z-50">
       <nav
-        class="flex items-center justify-between p-6 lg:px-8"
+        class="flex items-center justify-between p-4 sm:p-6 lg:px-8"
         aria-label="Global"
       >
         <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
-            <span class="font-bold text-xl under">Tresfjord Lyd & Lys</span>
+            <span class="font-bold text-lg sm:text-xl">Tresfjord Lyd & Lys</span>
           </a>
         </div>
         <div class="flex lg:hidden">
@@ -42,7 +42,7 @@
         >
           <div class="flex items-center justify-between">
             <a href="#" class="-m-1.5 p-1.5">
-              <span class="font-bold text-xl">Tresfjord Lyd & Lys</span>
+              <span class="font-bold text-lg sm:text-xl">Tresfjord Lyd & Lys</span>
             </a>
             <button
               type="button"
@@ -71,7 +71,7 @@
       </Dialog>
     </header>
 
-    <div class="relative isolate px-6 pt-14 lg:px-8">
+    <div class="relative isolate px-4 sm:px-6 pt-14 lg:px-8">
       <div
         class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
         aria-hidden="true"
@@ -100,21 +100,21 @@
           "
         />
       </div>
-      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+      <div class="mx-auto max-w-2xl py-24 sm:py-32 lg:py-40">
         <div class="hidden sm:mb-8 sm:flex sm:justify-center"></div>
         <div class="text-center">
           <h1
-            class="text-balance text-4xl font-bold tracking-tight text-gray-900 sm:text-7xl"
+            class="text-balance text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl"
           >
             Tresfjord Lyd & Lys
           </h1>
-          <p class="mt-6 text-xl leading-8 text-gray-800">
+          <p class="mt-6 text-lg sm:text-xl leading-8 text-gray-800">
             Proffesjonell lyd, lys og scene til alle dine arragement.
           </p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
             <a
               href="#contact"
-              class="rounded-md border-2 py-3 px-6 text-xl border-black bg-transparrent hover:bg-black hover:text-white text-black font-bold"
+              class="rounded-md border-2 py-2 px-4 sm:py-3 sm:px-6 text-lg sm:text-xl border-black bg-transparrent hover:bg-black hover:text-white text-black font-bold"
               >Kontakt oss</a
             >
           </div>
@@ -150,42 +150,42 @@
       </div>
     </div>
   </div>
-  <div class="bg-white py-24 sm:py-32">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+  <div class="bg-white py-16 sm:py-24 lg:py-32">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:text-center">
         <p
-          class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
+          class="mt-2 text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
         >
           Hva vi leverer
         </p>
-        <p class="mt-6 text-xl leading-8 text-gray-700">
+        <p class="mt-6 text-lg sm:text-xl leading-8 text-gray-700">
           Her er en oversikt over hvilke tjenester vi leverer.
         </p>
       </div>
-      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+      <div class="mx-auto mt-12 sm:mt-16 lg:mt-20 max-w-2xl lg:max-w-4xl">
         <dl
-          class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
+          class="grid max-w-xl grid-cols-1 gap-x-6 gap-y-8 sm:gap-x-8 sm:gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
         >
           <div
             v-for="feature in features"
             :key="feature.name"
-            class="relative pl-20"
+            class="relative pl-16 sm:pl-20"
           >
             <dt
-              class="font-semibold leading-7 text-gray-900 text-xl md:text-2xl"
+              class="font-semibold leading-7 text-gray-900 text-lg sm:text-xl md:text-2xl"
             >
               <div
-                class="absolute left-0 top-0 flex h-16 w-16 items-center justify-center rounded-lg bg-black"
+                class="absolute left-0 top-0 flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-lg bg-black"
               >
                 <component
                   :is="feature.icon"
-                  class="h-6 w-6 text-white"
+                  class="h-5 w-5 sm:h-6 sm:w-6 text-white"
                   aria-hidden="true"
                 />
               </div>
               {{ feature.name }}
             </dt>
-            <dd class="mt-2 text-base md:text-xl leading-7 text-gray-600">
+            <dd class="mt-2 text-base sm:text-lg md:text-xl leading-7 text-gray-600">
               {{ feature.description }}
             </dd>
           </div>
@@ -193,42 +193,37 @@
       </div>
     </div>
   </div>
-  <div class="bg-white py-24 sm:py-32">
-    <div class="container mx-auto px-4">
+  <div class="bg-white py-16 sm:py-24 lg:py-32">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 sm:text-5xl">
           Informasjon
         </h2>
       </div>
       <div class="mt-10">
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <div class="bg-gray-50 rounded-lg p-6 shadow-md">
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">Plassering</h3>
-            <p class="text-gray-600">
+        <div class="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div class="bg-gray-50 rounded-lg p-4 sm:p-6 shadow-md">
+            <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Plassering</h3>
+            <p class="text-gray-600 text-base sm:text-lg">
               Noe om hvor vi har lager og hvor vi lever til kanskje???
             </p>
           </div>
-          <div class="bg-gray-50 rounded-lg p-6 shadow-md">
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">Noe</h3>
-            <p class="text-gray-600">
+          <div class="bg-gray-50 rounded-lg p-4 sm:p-6 shadow-md">
+            <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Noe</h3>
+            <p class="text-gray-600 text-base sm:text-lg">
               Du fer virkelig finne på nokko sprell her altså, øyvind.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-lg p-6 shadow-md">
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">Noe annet</h3>
-            <p class="text-gray-600">
+          <div class="bg-gray-50 rounded-lg p-4 sm:p-6 shadow-md">
+            <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Noe annet</h3>
+            <p class="text-gray-600 text-base sm:text-lg">
               Åsså kanskje nokko lite her, om d e aktuelt?
             </p>
           </div>
         </div>
       </div>
-      <div class="mt-12 text-center">
-        <a
-          href="#"
-          class="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300"
-        >
-          Learn More
-        </a>
+    </div>
+  </div>
   <div class="bg-white py-16 sm:py-24 lg:py-32">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-8 sm:mb-12">Crewet</h2>
@@ -253,7 +248,6 @@
         </div>
       </div>
     </div>
-    '
   </div>
 </template>
 
